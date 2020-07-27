@@ -49,3 +49,9 @@ main>section {
 main>section h2 {
     margin-bottom: 10px;
 }
+
+@media(max-width: 768px) {
+    .main-nav h2 {
+        font-size: 13px;
+    }
+}
