@@ -10,6 +10,11 @@ body {
     color: #eee;
 }
 
+a {
+    color: #eee;
+    text-decoration: none;
+}
+
 .current {
     font-weight: bold;
     text-decoration: underline;
@@ -40,7 +45,7 @@ body {
 main {
     margin: 40px auto;
     width: 80%;
-    min-height: 100vh;
+    min-height: 76vh;
 }
 
 main>section {
@@ -50,6 +55,37 @@ main>section {
 main>section h2 {
     margin-bottom: 10px;
 }
+
+.link-site {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.link-site h2 {
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.link-site a:hover {
+    color: gold;
+}
+
+/* Footer */
+
+footer {
+    height: 50px;
+    text-align: center;
+    border-top: deepskyblue 5px solid;
+}
+
+footer p {
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* Mobile */
 
 @media(max-width: 600px) {
     .main-nav {
@@ -65,10 +101,4 @@ main>section h2 {
     .main-nav h2{
         font-size: 17px;
     }
-}
-
-footer {
-    height: 50px;
-    text-align: center;
-    border-top: deepskyblue 5px solid;
 }
