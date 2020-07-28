@@ -48,11 +48,17 @@ main {
     min-height: 76vh;
 }
 
-main>section {
+.title-abbriv section {
+    border: 3px #333 solid;
+    padding: 5px;
     margin-bottom: 35px;
 }
 
-main>section h2 {
+.title-abbriv section:hover {
+    border: 3px #eee solid;
+}
+
+.title-abbriv section h2 {
     margin-bottom: 10px;
 }
 
