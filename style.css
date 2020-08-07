@@ -7,7 +7,7 @@
 html {
     height: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("img/mainimage.jpg") center no-repeat fixed;
+        url("img/mainimage.jpg") center center no-repeat fixed;
     background-size: cover;
     overflow: hidden;
 }
