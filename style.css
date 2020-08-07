@@ -6,10 +6,6 @@
 
 html {
     height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("img/mainimage.jpg") center center no-repeat fixed;
-    background-size: cover;
-    overflow: hidden;
 }
 
 body {
@@ -31,7 +27,7 @@ a {
 
 .container {
     width: 85%;
-    margin: 0 auto;
+    margin: 3rem auto 3rem auto;
 }
 
 hr {
@@ -65,9 +61,12 @@ header {
 
 /* Main Setting */
 main {
-    width: 90%;
-    height: 74.4%;
-    margin: 3rem auto 3rem auto;
+    width: 100%;
+    height: 86%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("img/mainimage.jpg") center center no-repeat fixed;
+    background-size: cover;
+    overflow: hidden;
 }
 
 #main-title {
@@ -138,13 +137,13 @@ footer p {
 
 /* Mobile */
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     main {
         height: 75.6%;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
     html,
     body {
         height: initial;
@@ -175,7 +174,7 @@ footer p {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media (max-width: 400px) {
     .main-nav h2 {
         font-size: 17px;
     }
