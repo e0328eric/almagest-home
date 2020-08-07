@@ -30,11 +30,6 @@ a {
     margin: 3rem auto 3rem auto;
 }
 
-hr {
-    margin: 2rem 0;
-    color: #eee;
-}
-
 /* Header Setting */
 header {
     height: 7%;
@@ -63,7 +58,11 @@ header {
 main {
     width: 100%;
     height: 86%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: linear-gradient(
+            180deg,
+            rgba(51, 51, 51, 0.5),
+            rgba(51, 51, 51, 1)
+        ),
         url("img/mainimage.jpg") center center no-repeat fixed;
     background-size: cover;
     overflow: hidden;
@@ -78,10 +77,13 @@ main {
     padding: 0.5rem;
 }
 
-#main-title p {
-    width: 55%;
+.text-content {
+    width: 65%;
     margin: 0 auto;
     padding: 0.5rem;
+}
+
+.text-content p {
     font-weight: bold;
 }
 
@@ -164,9 +166,9 @@ footer p {
         font-size: 25px;
     }
 
-    #main-title p {
-        font-size: 15px;
-        width: 80%;
+    .text-content {
+        font-size: 13px;
+        width: 85%;
     }
 
     #main-description {
@@ -179,7 +181,7 @@ footer p {
         font-size: 17px;
     }
 
-    #main-title p {
-        font-size: 13px;
+    .text-content {
+        width: 70%;
     }
 }
