@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap");
+
+// Constants
+$bg-color: #24252a;
+$text-color: #edf0f1;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    background-color: $bg-color;
+}
+
+html {
+    height: 100%;
+}
+
+li,
+a,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: $text-color;
+    text-decoration: none;
+}
+
+#here-logo {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: $text-color;
+    text-decoration: none;
+}
+
+.current {
+    color: #28f3af;
+}
+
+// Header
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+
+    li {
+        display: inline-block;
+        padding: 0rem 1rem;
+
+        a {
+            padding: 0.9rem 0rem;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            &:hover {
+                color: #28a9f3;
+            }
+        }
+    }
+}
+
+// Main Document
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.2rem;
+    color: $text-color;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    gap: 2rem;
+    padding: 2rem 10%;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+}
+
+@media (max-width: 555px) {
+    header {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #here-logo {
+        margin-bottom: 1.1rem;
+    }
+
+    .container {
+        display: block;
+
+        section {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
