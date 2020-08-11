@@ -106,7 +106,24 @@ main {
     flex-direction: column; }
   #here-logo {
     margin-bottom: 1.1rem; }
+  #main-hero h1 {
+    font-size: 2rem; }
+  #main-hero p {
+    width: 55%; }
+  h1 {
+    background-color: transparent;
+    font-size: 2.7rem;
+    padding-bottom: 0.5rem; }
+  p {
+    background-color: transparent;
+    width: minmax(75%, 55%);
+    font-size: 1.05rem;
+    font-weight: 700; }
   .container {
     display: block; }
     .container section {
       margin-bottom: 1.5rem; } }
+
+@media (max-width: 420px) {
+  #main-hero h1 {
+    font-size: 1.7rem; } }
