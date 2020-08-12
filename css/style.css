@@ -11,6 +11,10 @@
 html {
   height: 100%; }
 
+body {
+  display: flex;
+  flex-direction: column; }
+
 li,
 a,
 button {
@@ -29,6 +33,15 @@ button {
 
 .current {
   color: #28f3af; }
+
+.btn {
+  display: inline-block;
+  background-color: #28a9f3;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  font-weight: 900; }
 
 header {
   display: flex;
@@ -80,14 +93,6 @@ main {
   .memo p {
     font-size: 1.2rem;
     padding-top: 5px; }
-  .memo a {
-    display: inline-block;
-    background-color: #28a9f3;
-    padding: 1rem;
-    border: none;
-    border-radius: 1rem;
-    margin: 1rem 0;
-    font-weight: 900; }
 
 .container {
   display: grid;
@@ -95,10 +100,18 @@ main {
   gap: 2rem;
   padding: 2.5rem 10%; }
   .container h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900; }
   .container p {
     font-size: 1.2rem; }
+
+footer {
+  color: #edf0f1;
+  font-weight: 900;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: auto;
+  padding-bottom: 2rem; }
 
 @media (max-width: 555px) {
   header {
