@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap");
-
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 11px;
@@ -15,11 +15,18 @@ html {
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-li, a, button {
+li,
+a,
+button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
@@ -50,14 +57,20 @@ li, a, button {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 3rem 10%;
 }
 
 .logo {
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .nav__links {
@@ -72,6 +85,7 @@ header {
 .nav__links li a {
   padding: 0.9rem 0rem;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -87,10 +101,19 @@ main {
 #main-hero {
   width: 100%;
   height: 45vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mainpage.jpg") center center/cover no-repeat;
 }
 
@@ -107,41 +130,20 @@ main {
   font-weight: 700;
 }
 
-.memo {
-  padding: 2.5rem 10%;
-}
-
-.memo h2 {
-  font-size: 2rem;
-}
-
-.memo p {
-  font-size: 1.2rem;
-  padding-top: 5px;
-}
-
-.blog {
+.blog-article {
   width: 70%;
-  padding: 1cm;
-}
-
-.blog h2 {
-  font-weight: 800;
-  font-size: 2rem;
-  padding-bottom: 1rem;
-}
-
-.blog article {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  -ms-grid-columns: (minmax(3rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
   gap: 2rem;
-  padding: 2.5rem 10%; 
+  padding: 2.5rem 10%;
 }
 
 .container h2 {
@@ -164,10 +166,14 @@ footer {
 
 @media (max-width: 555px) {
   header {
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   #here-logo {
     margin-bottom: 1.1rem;
   }
@@ -175,26 +181,22 @@ footer {
     font-size: 2rem;
   }
   #main-hero p {
-    width: 55%; 
+    width: 55%;
   }
-
   h1 {
     background-color: transparent;
     font-size: 2.7rem;
     padding-bottom: 0.5rem;
   }
-
   p {
     background-color: transparent;
     width: minmax(75%, 55%);
     font-size: 1.05rem;
     font-weight: 700;
   }
-
   .container {
     display: block;
   }
-
   .container section {
     margin-bottom: 1.5rem;
   }
@@ -205,3 +207,4 @@ footer {
     font-size: 1.7rem;
   }
 }
+/*# sourceMappingURL=style.css.map */
