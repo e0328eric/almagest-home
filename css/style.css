@@ -151,13 +151,13 @@ main {
 .blog td {
   border: 1px solid white;
   font-family: "Noto Serif KR", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 0.5em;
 }
 
 .blog td ul li {
   font-family: "Noto Serif KR", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   list-style-position: inside;
 }
 
