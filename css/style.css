@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
 
 * {
   box-sizing: border-box;
@@ -123,6 +124,7 @@ main {
 .blog {
   width: 70%;
   padding: 1cm;
+  margin: auto;
 }
 
 .blog h2 {
@@ -131,10 +133,32 @@ main {
   padding-bottom: 1rem;
 }
 
-.blog article {
-  font-family: "Montserrat", sans-serif;
+.blog table {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+  margin-right: auto;
+  width: 80%;
+}
+
+.blog th {
+  border: 1px solid white;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.5rem;
+  padding: 0.5em;
+}
+
+.blog td {
+  border: 1px solid white;
+  font-family: "Noto Serif KR", sans-serif;
   font-size: 1.2rem;
-  justify-content: center;
+  padding: 0.5em;
+}
+
+.blog td ul li {
+  font-family: "Noto Serif KR", sans-serif;
+  font-size: 1.2rem;
+  list-style-position: inside;
 }
 
 .container {
@@ -197,6 +221,16 @@ footer {
 
   .container section {
     margin-bottom: 1.5rem;
+  }
+
+  .blog {
+    width: 80%;
+    padding: 0mm;
+    margin: auto;
+  }
+
+  .blog table {
+    width: 90%;
   }
 }
 
